@@ -1,0 +1,48 @@
+set bs=2    " allow backspacing over everything in insert mode
+set ai      " always set autoindenting on
+set cursorline "show horizontal line for current position
+"set backup " keep a backup file
+"set viminfo='20,\"50  " read/write a .viminfo file, don't store more than 50
+"lines of registers
+set history=50    " keep 50 lines of command line history
+set ruler    " show the cursor position all the time
+set tabstop=2 " ts
+set noet "automatically convert tab chars into spaces
+set shiftwidth=2 " sw
+set softtabstop=2 " sts
+set expandtab " added 2012.03.20
+set smarttab
+set showmatch
+set nowrapscan
+set nowrap
+set nohlsearch
+set number
+set incsearch
+set ignorecase
+set nohlsearch
+set wmnu
+set list
+set iskeyword+=-
+set lcs=tab:+-
+
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+
+"color scheme
+set background=dark
+colorscheme solarized
+
+set nocompatible
+set mouse=r
+
+map <Left> <Nop>
+map <Right> <Nop>
+map <Up> <Nop>
+map <Down> <Nop>
+
+" Nerd Tree specific
+let NERDTreeShowFiles=1
+let NERDTreeShowHidden=1
+
+map <S-Enter> <Esc>o
