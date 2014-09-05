@@ -29,8 +29,8 @@ bower_components
 # Common directories for generated files from
 # Grunt tasks
 ################################################
-*/generated
-*/min
+generated/
+min/
 
 ################################################
 # VIM
