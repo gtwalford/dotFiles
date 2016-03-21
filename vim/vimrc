@@ -21,6 +21,7 @@ set wmnu
 set list
 set iskeyword+=-
 set lcs=tab:+-
+set clipboard=unnamed
 
 execute pathogen#infect()
 syntax on
